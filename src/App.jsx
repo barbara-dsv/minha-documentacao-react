@@ -1,27 +1,29 @@
 import React from 'react'
 import './App.css'
-import Documentacao from './components/Documentacao'
-import Formularios from './components/Formularios'
-
-
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import DocumentacaoPage from './paginas/DocumentacaoPage'
+import EstudosPage from './paginas/EstudosPage'
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>Minha Documentação React</h1>
-        <hr />
-        <br />
-      </header>
-      <main>
-        <Formularios />
-        <Documentacao />
-      </main>
-      <footer>
+      <BrowserRouter>
+        <nav>
+          <Link to="/">Home</Link>
+          <br />
+          <Link to="/documentacao">Documentação</Link>
+          <br />
+          <Link to="/estudos">Estudos</Link>
+          <br />
+        </nav>
 
-      </footer>
+        <Routes>
+          <Route path='/documentacao' element={<DocumentacaoPage />} />
+          <Route path='/estudos' element={<EstudosPage />} />
+          <Route path='/' element={<EstudosPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
