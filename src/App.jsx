@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import Estados from './components/Estados'
 import Documentacao from './components/Documentacao'
+import Formularios from './components/Formularios'
+
 
 
 
 function App() {
-
 
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
         <br />
       </header>
       <main>
+        <Formularios />
         <Documentacao />
       </main>
       <footer>
