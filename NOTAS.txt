@@ -1,0 +1,19 @@
+Criar um projeto com vite
+npm create vite@latest minha-documentacao-react
+
+cd minha-documentacao-react
+npm install
+npm run dev
+
+
+Componentes
+Props
+Expressions
+Statements
+Renderização Condicional
+
+UsesState
+UseEfect
+Formulários
+Eventos
+Rotas
