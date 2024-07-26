@@ -1,19 +1,17 @@
-import React from 'react'
+import {Estado} from '../components/Estado'
 
-function EstudosPage(props) {
+export function EstadoPage() {
     return <>
         <header>
-            <h1>Estudos</h1>
+            <h1>Estado</h1>
             <hr />
-            <br />
+            <hr />
         </header>
         <main>
-
+            <Estado/>
         </main>
         <footer>
 
         </footer>
     </>
 }
-
-export default EstudosPage;

@@ -1,7 +1,6 @@
-import React from 'react'
 import Container from './Container';
 
-function Documentacao(props) {
+function Documentacao() {
     return <>
         <section>
             <Container titulo="Criar projeto" descricao="Criar um projeto com vite" codigo="npm create vite@latest minha-documentacao-react

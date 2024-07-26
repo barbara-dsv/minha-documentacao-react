@@ -1,20 +1,17 @@
-import React from 'react'
 import Documentacao from '../components/Documentacao';
 
-function DocumentacaoPage(props) {
+export function DocumentacaoPage() {
     return <>
         <header>
-            <h1>Minha Documentação React</h1>
+            <h1>Minha Documentação </h1>
             <hr />
-            <br />
+            <hr />
         </header>
         <main>
-            <Documentacao />
+            <Documentacao/>
         </main>
         <footer>
 
         </footer>
     </>
 }
-
-export default DocumentacaoPage;
